@@ -39,4 +39,3 @@ Scroll down to element
         Exit For Loop If    ${is_visible} == True
         AppiumLibrary.Swipe    ${scroll.x_axis_start}    ${scroll.y_axis_start}    ${scroll.x_axis_end}    ${scroll.y_axis_end}    ${scroll.time_to_swipe}
     END
-
