@@ -1,2 +1,3 @@
-testdata:
-  produc_color: black
+product:
+  product_name: Sauce Labs Onesie
+  num_of_product: 1

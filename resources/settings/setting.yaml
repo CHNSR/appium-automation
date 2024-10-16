@@ -1,25 +1,8 @@
-android:
-  remote_url: http://127.0.0.1:4723/wd/hub    
-  platformName: Android
-  platformVersion: '14'
-  deviceName: emulator-5554
-  app_directory: mda-2.1.0-24.apk
-  autoGrantPermissions: True
-  appPackage: com.saucelabs.mydemoapp.android
-  appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
-  automationName: UiAutomator2
-  fullReset: True
-
-android2:
-  remote_url: http://127.0.0.1:4723/wd/hub    
-  platformName: Android
-  platformVersion: "14"
-  deviceName: emulator-5554,
-  app: mda-2.1.0-24.apk
-  appPackage: com.saucelabs.mydemoapp.android
-  appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
-  automationName: UiAutomator2
-  autoGrantPermissions: True
-
-time:
-  wait_time: '20s'
+remote_url: http://localhost:4723/wd/hub
+waiting_time: 30s
+scroll:
+  x_axis_start: 0
+  y_axis_start: 500
+  x_axis_end: 0
+  y_axis_end: 0
+  time_to_swipe: 500

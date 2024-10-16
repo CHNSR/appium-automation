@@ -1,0 +1,9 @@
+ios:
+  platformName: ios
+  automationName: XCUITest
+  deviceName: iPhone 16 Pro
+  platformVersion: "18.0"
+  udid: 3445A96E-C466-4C0D-B81F-C9C2F62CB427
+  bundleId: com.saucelabs.mydemoapp.rn
+time:
+    delay_time: 30s

@@ -1,20 +1,20 @@
 *** Settings ***
 Library    AppiumLibrary
+Library    DebugLibrary
 
-Variables   ${CURDIR}/../resources/settings/setting.yaml
 
-#Resources page
 Resource    ${CURDIR}/../keywords/pages/cart_page.robot
 Resource    ${CURDIR}/../keywords/pages/home_page.robot
-Resource    ${CURDIR}/../keywords/pages/product_page.robot
 
-#Resources page
 Resource    ${CURDIR}/../keywords/features/cart_feature.robot
-Resource    ${CURDIR}/../keywords/features/product_feature.robot
+Resource    ${CURDIR}/../keywords/features/home_feature.robot
 
-Resource    ${CURDIR}/../keywords/common/common.robot
+Resource    ${CURDIR}/../keywords/commons/common.robot
 
-#Resource locator
-Resource    ${CURDIR}/../resources/locators/android/cart_locator.robot
-Resource    ${CURDIR}/../resources/locators/android/home_locator.robot
-Resource    ${CURDIR}/../resources/locators/android/product_locator.robot
+Resource    ${CURDIR}/../resources/locators/${platform}/home_locator.robot
+Resource    ${CURDIR}/../resources/locators/${platform}/cart_locator.robot
+
+
+Variables   ${CURDIR}/settings/${platform}.yaml
+Variables   ${CURDIR}/test_data/testdata.yaml
+Variables   ${CURDIR}/settings/setting.yaml
