@@ -7,4 +7,3 @@ android:
   appActivity: com.saucelabs.mydemoapp.rn.MainActivity
 time:
   delay_time: 30s
-  
