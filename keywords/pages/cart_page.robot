@@ -7,5 +7,5 @@ Tap to open cart
 
 Check items in cart
     ${item_count}=  common.Get text when ready   ${cart_locator.display_items_count}
-    log to console    Current item count is: ${item_count}
-    should be equal as numbers    ${item_count}    ${product.num_of_product}
+    BuiltIn.log to console    Current item count is: ${item_count}
+    BuiltIn.should be equal as numbers    ${item_count}    ${product.num_of_product}
