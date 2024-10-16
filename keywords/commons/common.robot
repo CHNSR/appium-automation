@@ -33,9 +33,10 @@ Get text when ready
 
 Scroll down to element
     [Arguments]    ${locator}
-    ${element_found}=    Set Variable    False  
-    WHILE    '${element_found}' == 'False'
+    ${is_visible}=    Set Variable    False
+    FOR    ${index}    IN RANGE    1    6
+        ${is_visible}=    BuiltIn.Run Keyword and return status    AppiumLibrary.Wait until element is visible    ${locator}    ${time.delay_time}
+        Exit For Loop If    ${is_visible} == True
         AppiumLibrary.Swipe    ${scroll.x_axis_start}    ${scroll.y_axis_start}    ${scroll.x_axis_end}    ${scroll.y_axis_end}    ${scroll.time_to_swipe}
-        ${element_found}=    BuiltIn.Run Keyword and return status    AppiumLibrary.Wait until element is visible    ${locator}    ${time.delay_time}
     END
 
