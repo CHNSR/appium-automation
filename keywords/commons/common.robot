@@ -4,7 +4,7 @@ Open application with platform
     ...    ELSE    Open ios application
 
 Open android application
-    AppiumLibrary.Open Application      remote_url=${remote_url}  
+    AppiumLibrary.Open application      remote_url=${remote_url}  
     ...    automationName=${android.automationName}  
     ...    platformName=${android.platformName}
     ...    platformVersion=${android.platformVersion}
@@ -13,7 +13,7 @@ Open android application
     ...    appActivity=${android.appActivity}
 
 Open ios application
-    ${capability}=    Create Dictionary    automation=${ios.automationName}    
+    ${capability}=    Create dictionary    automation=${ios.automationName}    
     ...    platformName=${ios.platformName}    
     ...    platformVersion=${ios.platformVersion}   
     ...    bundleId=${ios.bundleId}    
