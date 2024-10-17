@@ -6,4 +6,4 @@ android:
   appPackage: com.saucelabs.mydemoapp.rn
   appActivity: com.saucelabs.mydemoapp.rn.MainActivity
 time:
-  delay_time: 30s
+  delay_time: 10s

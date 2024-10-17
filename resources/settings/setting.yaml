@@ -1,5 +1,5 @@
 remote_url: http://localhost:4723/wd/hub
-waiting_time: 30s
+waiting_time_swipe: 1000
 scroll:
   x_axis_start: 0
   y_axis_start: 500

@@ -18,6 +18,7 @@ Resource    ${CURDIR}/../keywords/commons/common.robot
 #locator
 Resource    ${CURDIR}/../resources/locators/${platform}/home_locator.robot
 Resource    ${CURDIR}/../resources/locators/${platform}/cart_locator.robot
+Resource    ${CURDIR}/../resources/locators/${platform}/product_locator.robot
 
 #setting
 Variables   ${CURDIR}/settings/${platform}.yaml
