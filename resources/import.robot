@@ -6,6 +6,7 @@ Library    BuiltIn
 #page
 Resource    ${CURDIR}/../keywords/pages/cart_page.robot
 Resource    ${CURDIR}/../keywords/pages/home_page.robot
+Resource    ${CURDIR}/../keywords/pages/product_page.robot
 
 #feature
 Resource    ${CURDIR}/../keywords/features/cart_feature.robot
