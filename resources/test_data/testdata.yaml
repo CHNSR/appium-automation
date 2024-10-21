@@ -1,3 +1,4 @@
-product:
-  product_name: Sauce Labs Onesie
-  num_of_product: 1
+test_data_1:
+ product:
+  name: Sauce Labs Onesie
+  amount: 1

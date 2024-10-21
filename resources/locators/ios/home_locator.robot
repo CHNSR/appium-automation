@@ -1,2 +1,2 @@
 *** Variables ***
-${home_locator.product}    xpath=//XCUIElementTypeOther[@name="${product.product_name}"]
+${home_locator.product}    xpath=//XCUIElementTypeOther[@name="${test_data_1.product.name}"]
