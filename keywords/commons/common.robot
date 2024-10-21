@@ -32,9 +32,9 @@ Get text when ready
     [Return]    ${text}
 
 Scroll down to element
-    [Arguments]    ${locator}    ${loop_start}=1    ${loop_end}=5
+    [Arguments]    ${locator}    ${attempt}=5
     ${is_visible}=    Set Variable    ${FALSE}
-    FOR    ${index}    IN RANGE    ${loop_start}    ${loop_end}
+    FOR    ${index}    IN RANGE    1    ${attempt}
         ${is_visible}=    BuiltIn.Run Keyword and return status    AppiumLibrary.Wait until element is visible    ${locator}    ${time.delay_time}
         Exit For Loop If    ${is_visible}
         AppiumLibrary.Swipe    ${swipe_setting.scroll.x_axis_start}    ${swipe_setting.scroll.y_axis_start}    ${swipe_setting.scroll.x_axis_end}    ${swipe_setting.scroll.y_axis_end}    ${swipe_setting.waiting_time_swipe}

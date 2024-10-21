@@ -1,6 +1,6 @@
 remote_url: http://localhost:4723/wd/hub
 swipe_setting:
- waiting_time_swipe: 1000
+ waiting_time_swipe: 500
  scroll:
   x_axis_start: 0
   y_axis_start: 500
