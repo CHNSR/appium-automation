@@ -2,3 +2,5 @@ test_data_1:
  product:
   name: Sauce Labs Onesie
   amount: 1
+ scroll:
+  attempt: 5

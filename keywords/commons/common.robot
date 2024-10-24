@@ -32,7 +32,7 @@ Get text when ready
     [Return]    ${text}
 
 Scroll down to element
-    [Arguments]    ${locator}    ${attempt}=5
+    [Arguments]    ${locator}    ${attempt}
     ${is_visible}=    Set Variable    ${FALSE}
     FOR    ${index}    IN RANGE    1    ${attempt}
         ${is_visible}=    BuiltIn.Run Keyword and return status    AppiumLibrary.Wait until element is visible    ${locator}    ${time.delay_time}
